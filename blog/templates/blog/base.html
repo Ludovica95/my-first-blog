@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <title>Lafs Blog</title>
+        <div class="page-header">
+        <h1><a href="/"> Lafs Blog</a></h1>
+        <h2> Un blog di arte e moda</h2>
+        </div>
+    </head>
+  <body>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
